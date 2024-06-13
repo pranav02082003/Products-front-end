@@ -1,0 +1,30 @@
+.form {
+    box-shadow: 10px 10px 8px 10px #888888;
+    border-radius: 5px;
+    height: 80vh;
+    text-align: center;
+    margin-left: 35%;
+
+}
+
+.form-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.input-box {
+    width: 250%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    &::placeholder{
+        color: white;
+        font-weight: bold;
+        font-size: large;
+    }
+}
+input:focus{
+    color: white;
+}

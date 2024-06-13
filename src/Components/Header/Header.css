@@ -1,0 +1,65 @@
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.main-card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: end;
+}
+
+.list li{
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+@media only screen and (min-width : 992px) {
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        max-width: auto;
+        color: white;
+    }
+    
+}
+
+.button-right{
+    margin-left: 10px;
+}
+
+@media only screen and (min-width : px) {
+
+}
+
+
+
+.list-right{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: right;
+}
+
+.paragraph{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.icon-cart{
+    font-size: larger;
+    margin-top: -5px;
+}
+
+
+
