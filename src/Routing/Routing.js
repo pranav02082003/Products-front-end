@@ -6,6 +6,7 @@ import Login from '../Components/Login/Login'
 import ShopNow from '../Components/ShopNow/ShopNow'
 import Cart from '../Components/Cart/Cart'
 import About from '../Components/About/About'
+import Profile from '../Components/Profile/Profile'
 
 function Routing() {
     
@@ -19,6 +20,7 @@ function Routing() {
                     <Route path='/ShopNow' element={<ShopNow />}></Route>
                     <Route path='/Cart' element={<Cart />}></Route>
                     <Route path='/About' element={<About />}></Route>
+                    <Route path='/Profile' element={<Profile />}></Route>
                 </Routes>
             </BrowserRouter>
         </div>

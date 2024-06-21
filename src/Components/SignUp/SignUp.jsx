@@ -14,6 +14,7 @@ export default function SignUp() {
     const [fname, setfname] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [phnno,setPhnno] = useState("")
 
     function handlename(event) {
         const fullName = event.target.value
@@ -23,6 +24,11 @@ export default function SignUp() {
     function handleemail(event) {
         const newemail = event.target.value
         setEmail(newemail)
+    }
+
+    function handlePhn(event){
+        const newphn = event.target.value
+        setPhnno(newphn)
     }
 
     function handlepassword(event) {
@@ -35,7 +41,8 @@ export default function SignUp() {
         const data = {
             name: fname,
             email: email,
-            password: password
+            password: password,
+            phnno:phnno
         }
 
         try {
@@ -56,8 +63,8 @@ export default function SignUp() {
                     
                 })
         }
-        catch {
-            console.log("error occured");
+        catch(error) {
+            console.log(error);
         }
 
 
@@ -72,8 +79,8 @@ export default function SignUp() {
 
                     <input onChange={handlename} className='input-box' type='text' value={fname} name='fname' placeholder='Enter your Name' />
                     <input onChange={handleemail} className='input-box' type='email' value={email} name='email' placeholder='Enter your Email' />
-
                     <input onChange={handlepassword} className='input-box' type='password' value={password} name='password' placeholder='Enter your password' />
+                    <input onChange={handlePhn} className='input-box' type='text' value={phnno} name='phnno' placeholder='Enter your phn no'/>
                     <button onClick={handleSubmit} className='btn btn-success'>Submit</button>
                 </form>
                 <Link to={"/Login"}><button className='btn btn-danger mt-2'>Already have an account</button></Link>
